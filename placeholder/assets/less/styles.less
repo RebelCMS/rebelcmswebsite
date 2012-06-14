@@ -1,0 +1,112 @@
+@import "reset.less";
+@import "mixins.less";
+
+@imgPath: "../images/";
+@fontPath: "../fonts/";
+
+@font-face {
+	font-family: 'HVD Poster';
+	src: url('@{fontPath}hvdposter.eot'); /* IE9 Compat Modes */
+	src: url('@{fontPath}hvdposter.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('@{fontPath}hvdposter.woff') format('woff'), /* Modern Browsers */
+	     url('@{fontPath}hvdposter.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('@{fontPath}hvdposter.svg#svgFontName') format('svg'); /* Legacy iOS */
+	}
+
+body {
+    background-color: #565b6c;
+    padding-top: 220px;
+    color: #ddd;
+}
+
+[role="banner"] {
+    position: relative;
+
+    hgroup {
+        position: relative;
+        background-color: #444;
+        padding: 15px 15px 15px 220px;
+        margin-left: 120px;
+        .border-radius(10px);
+        #gradient > .vertical(#222, #333);
+        .box-shadow(2px 2px 4px rgba(0,0,0,.3));
+
+        &:before {
+            background: url("@{imgPath}fist.png") no-repeat left center;
+            content: '';
+            display: block;
+            left: -120px;
+            top: -200px;
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            z-index: 100;
+        }
+    }
+
+    h1, h2 {
+        font-family: 'HVD Poster';
+    }
+
+    h1 {
+        font-size: 60px;
+        text-transform: uppercase;
+        color: #fff;
+        
+        abbr {
+            border: none;
+        }
+    }
+
+    h2 {
+        font-size: 32px;
+        text-transform: lowercase;
+        color: #aaa;
+    }
+}
+
+.container {
+    width: 980px;
+    margin: 0 auto;
+}
+
+p {
+    line-height: 1.4;
+}
+
+a {
+    color: #95b0e5;
+
+    &:hover {
+        color: #7f95c7;
+    }
+}
+
+.content {
+    margin-top: 80px;
+    margin-left: 340px;
+
+    h2, h3 {
+        color: #fff;
+        .text-shadow(2px 2px 3px rgba(0,0,0,.4));
+    }
+
+    h2 {
+        font-size: 42px;
+        border-bottom: 1px dotted #fff;
+        margin: 30px 0 20px;
+    }
+
+    h3 {
+        font-size: 26px;
+        margin: 20px 0;
+    }
+
+    ul {
+        margin: 20px 0 20px 17px;
+
+        li {
+            margin-bottom: 5px;
+        }
+    }
+}
