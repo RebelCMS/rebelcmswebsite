@@ -269,13 +269,7 @@ video {
 End Reset
 =============================================================*/
 @font-face {
-  font-family: 'HVD Poster';
-  src: url('../fonts/hvdposter.eot');
-  src: url('../fonts/hvdposter.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-   url('../fonts/hvdposter.woff') format('woff'), /* Modern Browsers */
-   url('../fonts/hvdposter.ttf') format('truetype'), /* Safari, Android, iOS */
-   url('../fonts/hvdposter.svg#svgFontName') format('svg');/* IE9 Compat Modes */
-  /* Legacy iOS */
+  font-family: 'Frijole', cursive;
 }
 body {
   background-color: #565b6c;
@@ -316,7 +310,7 @@ body {
 }
 [role="banner"] h1,
 [role="banner"] h2 {
-  font-family: 'HVD Poster';
+  font-family: 'Frijole';
 }
 [role="banner"] h1 {
   font-size: 60px;
@@ -327,7 +321,7 @@ body {
   border: none;
 }
 [role="banner"] h2 {
-  font-size: 32px;
+  font-size: 22px;
   text-transform: lowercase;
   color: #aaa;
 }
