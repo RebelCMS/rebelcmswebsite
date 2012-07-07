@@ -1,0 +1,1 @@
+xcopy *.* /e d:\Sites\RebelCmsMainSite
