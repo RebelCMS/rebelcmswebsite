@@ -1,1 +1,1 @@
-xcopy *.* /e d:\Sites\RebelCmsMainSite
+xcopy *.* /e /y d:\Sites\RebelCmsMainSite\
