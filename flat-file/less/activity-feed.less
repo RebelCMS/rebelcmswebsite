@@ -1,0 +1,63 @@
+// Activity feed
+// -------------------------
+.activity-feed {
+
+    .items {
+        list-style: none;
+        margin: 0 0 40px;
+        padding: 0;
+    }
+
+    .item {
+        .border-radius(5px);
+        .box-shadow(1px 1px 1px 0px #d9d9d9);
+        #gradient > .vertical(#f9f9f9, #f5f5f5);
+        border: 1px solid #959595;
+        background-color: #f5f5f5;
+        margin-bottom: 15px;
+        padding: 8px 13px 5px;
+
+        .content {
+            margin: 0 0 10px;
+        }
+
+        .posted {
+            font-size: 10px;
+            margin: 0;
+
+            a {
+                color: lighten(@textColor, 25%);
+                text-decoration: none;
+
+                &:hover {
+                    color: lighten(@textColor, 10%);
+                }
+            }
+        }
+    }
+
+    // Twitter
+    .twitter {
+        border-color: #4cc5f4;
+        #gradient > .vertical(#f2fbfe, #eef6fa);
+        background-color: #eef6fa;
+    }
+
+    // Facebook
+    .facebook {
+        border-color: #899bc1;
+        #gradient > .vertical(#f5f6fa, #f1f2f5);
+        background-color: #f1f2f5;
+    }
+
+    // Blog & Forum (can be easily split)
+    .blog,
+    .forum {
+        border-color: #e29090;
+        #gradient > .vertical(#fcf4f4, #f8f0f0);
+        background-color: #f8f0f0;
+    }
+
+    // GitHub (inheriting from default)
+    .github {}
+}

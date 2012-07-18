@@ -1,0 +1,160 @@
+// Home page specific styles
+// -------------------------
+.home {
+
+    // Project summary box
+    .project-summary {
+        margin-bottom: 20px;
+
+        .summary {
+            font-size: 12px;
+            font-family: "OpenSansBold", sans-serif;
+            margin: 0 0 10px;
+        }
+
+        .learn-more {
+            color: @textColor;
+            font-family: "OpenSansBold", sans-serif;
+
+            &:after {
+                content: "\00a0\003e";
+            }
+        }
+    }
+
+
+    // Blog latest box
+    .blog-latest {
+        margin-bottom: 20px;
+
+        .timestamp {
+            color: lighten(@textColor, 35%);
+            font-size: 10px;
+            float: right;
+            margin: -28px 20px 0 0;
+        }
+
+        .title {
+            font-size: 12px;
+            font-family: "OpenSansBold", sans-serif;
+            margin: 0 0 10px;
+        }
+
+        .snippet {}
+    }
+
+    // Features box
+    .features {
+        margin-bottom: 20px;
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0 0 0 8px;
+        }
+
+        .feature {
+            font-size: 13px;
+            margin-bottom: 15px;
+
+            a {
+                display: inline-block;
+                padding: 5px 5px 2px 35px;
+                text-decoration: none;
+                background: #fff url(../img/features-sprite.png) no-repeat;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        // Blistering performance
+        .performance {
+
+            a {
+                background-position: 0 0;
+            }
+        }
+
+        // Enterprise support
+        .support {
+
+            a {
+                background-position: 0 -35px;
+            }
+        }
+
+        // MVC architecture
+        .architecture {
+
+            a {
+                background-position: 0 -70px;
+            }
+        }
+
+        // REST API
+        .api {
+
+            a {
+                background-position: 0 -105px;
+            }
+        }
+
+        // More Features
+        .more {
+
+            a {
+                font-weight: normal;
+                font-size: 13px;
+                font-family: "OpenSansBold", sans-serif;
+                margin-left: 35px;
+
+                &:after {
+                    content: "\00a0\003e";
+                }
+            }
+        }
+    }
+
+    // Download Rebel CMS box
+    .download-buttons {
+        text-align: center;
+        margin-bottom: 20px;
+
+        h2 {
+            .visuallyhidden;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 18px;
+        }
+
+        // Download Latest button
+        // TODO Add background image combined with gradient
+        .download {}
+
+        // View on GitHub button
+        // TODO Add background image combined with gradient
+        .github {}
+    }
+
+    // Get involved box
+    // TODO Possibly load at higher screen size
+    .get-involved {
+
+        p {
+            line-height: @baseLineHeight + 0.1;
+        }
+
+        a {
+            font-weight: bold;
+        }
+    }
+}
