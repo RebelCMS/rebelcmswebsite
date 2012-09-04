@@ -9,7 +9,7 @@
         margin-top: 35px;
         position: relative;
         text-align: right;
-        background: #dfdfdf url(../img/footer-logo.png) no-repeat top right;
+        background: @footerBackground url("@{imgPath}footer-logo.png") no-repeat top right;
 
         p {
             text-shadow: 0 1px 0 #fff;
@@ -30,14 +30,10 @@
 // -------------------------
 .footer-nav {
 
-    h1 {
-        .visuallyhidden;
-    }
-
     ul {
         .clearfix;
         text-align: center;
-        background: url(../img/footer-nav-bg.png) repeat-y center;
+        background: url("@{imgPath}footer-nav-bg.png") repeat-y center;
     }
 
     li {

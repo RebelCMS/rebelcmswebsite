@@ -1,51 +1,83 @@
 // Base styles
 // -------------------------
 
-// Global
-// -------------------------
+// Apply a natural box layout model to all elements
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+    color: @textColor;
+}
+
 body {
+    color: @textColor;
+    background-color: @bodyBackground;
     font-family: @baseFontFamily;
     font-size: @baseFontSize;
-    color: @textColor;
-    background-color: #fff;
+    line-height: @baseLineHeight;
 }
 
-// Wrapper
+// Links
+a {
+    color: @linkColor;
+
+    &:hover {
+        color: @linkColorHover;
+        text-decoration: none;
+    }
+
+    &:visited {
+        color: @linkColorVisited;
+    }
+}
+
+// Selection highlight
+::-moz-selection {
+    background: @selectionHightlightColor;
+    text-shadow: none;
+}
+
+::selection {
+    background: @selectionHightlightColor;
+    text-shadow: none;
+}
+
+// Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+img {
+    vertical-align: middle;
+}
+
+// Remove default fieldset styles.
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+// Allow only vertical resizing of textareas.
+textarea {
+    resize: vertical;
+}
+
+// Remove margin and padding from nav ul/ols
+nav {
+
+    ul,
+    ol {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+// Global wrapper
+// -------------------------
 .wrap {
-    background-color: #dfdfdf;
-}
-
-// Main content
-// -------------------------
-.main-content {
-    .border-radius(5px 5px 0 0);
-    .box-shadow(0px 2px 2px 0px #c8c8c8);
-    border-top: 1px solid #adadad;
-    border-bottom: 1px solid #adadad;
-    background-color: #fff; // TODO: Possibly add in only when needed
-    padding: 30px 10px;
-
-    h1,
-    h2 {
-        font-size: 24px;
-        font-weight: normal;
-        font-family: "OpenSansLightRegular", sans-serif;
-        margin: 0 0 20px;
-    }
-
-    h2 {
-        font-size: 16px;
-        margin: 0 0 12px;
-    }
-}
-
-// 30em devices and up
-// -------------------------
-@media only screen and (min-width: 30em) {
-
-    // Content
-    // -------------------------
-    .main-content {
-        padding: 30px 20px;
-    }
+    background-color: darken(@bodyBackground, 13%);
 }

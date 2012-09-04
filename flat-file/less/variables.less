@@ -1,21 +1,27 @@
 // Variables
 // -------------------------
 
-// Base font family
-@baseFontFamily:            "OpenSansRegular", sans-serif;
-
-// Base font size
-@baseFontSize:              12px;
-
-// Base line height
-@baseLineHeight:            1.45;
-
-// Brand colour
+// Scaffolding
 @brandColor:                #c62222;
-
-// Body text colour
+@bodyBackground:            #fff;
+@footerBackground:          #dfdfdf;
 @textColor:                 #323232;
 
 // Links
 @linkColor:                 @textColor;
-@linkColorHover:            lighten(@linkColor, 5%);
+@linkColorHover:            darken(@linkColor, 15%);
+@linkColorVisited:          lighten(@linkColor, 15%);
+
+// Typography
+@sansFontFamily:            'source_sans_proregular', sans-serif;
+@serifFontFamily:           serif;
+
+@baseFontSize:              13px;
+@baseFontFamily:            @sansFontFamily;
+@baseLineHeight:            1.45;
+
+// Images paths
+@imgPath:                   "../img/";
+
+// Selection highlight
+@selectionHightlightColor:  #b3d4fc;
