@@ -570,17 +570,17 @@ nav ol {
   padding: 0;
 }
 .slider .slide {
-  font-size: 13px;
+  font-size: 15px;
   padding: 35px 10px 10px;
 }
 .slider .slide p {
-  font-size: 14px;
   line-height: 1.7;
   margin: 0 0 15px;
 }
 .slider .slide-title {
   color: #c62222;
-  font-size: 25px;
+  font-size: 32px;
+  font-weight: normal;
   margin: 0 0 10px;
 }
 .slider .learn-more a {
@@ -595,7 +595,7 @@ nav ol {
     padding: 35px 20px 20px;
   }
   .slider .slide-title {
-    font-size: 35px;
+    font-size: 42px;
     margin: 0 0 20px;
   }
 }

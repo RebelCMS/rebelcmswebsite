@@ -10,11 +10,10 @@
     }
 
     .slide {
-        font-size: 13px;
+        font-size: @baseFontSize + 1;
         padding: 35px 10px 10px;
 
         p {
-            font-size: 14px;
             line-height: @baseLineHeight + 0.25;
             margin: 0 0 15px;
         }
@@ -22,7 +21,8 @@
 
     .slide-title {
         color: @brandColor;
-        font-size: 25px;
+        font-size: @baseFontSize + 18;
+        font-weight: normal;
         margin: 0 0 10px;
     }
 
@@ -58,7 +58,7 @@
         }
 
         .slide-title {
-            font-size: 35px;
+            font-size: @baseFontSize + 28;
             margin: 0 0 20px;
         }
     }
