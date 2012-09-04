@@ -1,6 +1,6 @@
 # [Rebel CMS Website](http://www.rebelcms.com/)
 
-This is the public repo for the [Rebel CMS Website](http://www.rebelcms.com/). Feel free to submit a Pull Request!
+This is the public repo for the [Rebel CMS website](http://www.rebelcms.com/). Feel free to submit a Pull Request!
 
 Rebel CMS is built under [MIT License](http://opensource.org/licenses/MIT).
 
