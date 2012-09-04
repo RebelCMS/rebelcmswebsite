@@ -286,7 +286,7 @@ body {
   color: #323232;
   background-color: #ffffff;
   font-family: 'source_sans_proregular', sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.45;
 }
 a {
@@ -365,12 +365,11 @@ nav ol {
 }
 .global-header .tagline {
   color: #454545;
-  font-size: 12px;
+  font-size: 13px;
   text-align: center;
   margin: 0 0 14px;
 }
 .global-nav a {
-  font-size: 14px;
   font-weight: bold;
   text-decoration: none;
   display: block;
@@ -411,14 +410,14 @@ nav ol {
   background-color: #fff;
   padding: 30px 10px;
 }
-.main-content h1,
-.main-content h2 {
+.main-content h1 {
   font-size: 24px;
   font-weight: normal;
   margin: 0 0 20px;
 }
 .main-content h2 {
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: normal;
   margin: 0 0 12px;
 }
 @media only screen and (min-width: 30em) {
@@ -500,7 +499,7 @@ nav ol {
   -moz-box-shadow: 1px 1px 1px 0px #d9d9d9;
   box-shadow: 1px 1px 1px 0px #d9d9d9;
   display: inline-block;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: bold;
   line-height: 1.45;
   color: #4c4c4c;
@@ -630,7 +629,7 @@ nav ol {
   margin: 0 0 10px;
 }
 .activity-feed .item .posted {
-  font-size: 10px;
+  font-size: 12px;
   margin: 0;
 }
 .activity-feed .item .posted a {
@@ -684,9 +683,9 @@ nav ol {
   margin-bottom: 20px;
 }
 .home .project-summary .summary {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
-  margin: 0 0 10px;
+  margin: 0 0 8px;
 }
 .home .project-summary .learn-more {
   color: #323232;
@@ -700,17 +699,18 @@ nav ol {
 }
 .home .blog-latest .timestamp {
   color: #8b8b8b;
-  font-size: 10px;
+  font-size: 12px;
   float: right;
   margin: -28px 20px 0 0;
 }
 .home .blog-latest .title {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
-  margin: 0 0 10px;
+  margin: 0 0 8px;
 }
 .home .features {
-  margin-bottom: 20px;
+  width: 220px;
+  margin: auto auto 30px;
 }
 .home .features ul {
   list-style: none;
@@ -718,7 +718,6 @@ nav ol {
   padding: 0 0 0 8px;
 }
 .home .features .feature {
-  font-size: 13px;
   margin-bottom: 15px;
 }
 .home .features .feature a {
@@ -743,8 +742,6 @@ nav ol {
   background-position: 0 -105px;
 }
 .home .features .more a {
-  font-weight: normal;
-  font-size: 13px;
   font-weight: bold;
   margin-left: 35px;
 }
@@ -753,7 +750,7 @@ nav ol {
 }
 .home .download-buttons {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .home .download-buttons ul {
   list-style: none;
@@ -768,6 +765,18 @@ nav ol {
 }
 .home .get-involved a {
   font-weight: bold;
+}
+@media only screen and (min-width: 30em) {
+  .home .features {
+    float: left;
+  }
+  .home .download-buttons {
+    float: right;
+    margin-top: 60px;
+  }
+  .home .get-involved {
+    clear: both;
+  }
 }
 .hidden {
   display: none !important;

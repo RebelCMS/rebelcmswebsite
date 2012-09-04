@@ -7,9 +7,9 @@
         margin-bottom: 20px;
 
         .summary {
-            font-size: 12px;
+            font-size: @baseFontSize;
             font-weight: bold;
-            margin: 0 0 10px;
+            margin: 0 0 8px;
         }
 
         .learn-more {
@@ -28,15 +28,15 @@
 
         .timestamp {
             color: lighten(@textColor, 35%);
-            font-size: 10px;
+            font-size: @baseFontSize - 2;
             float: right;
             margin: -28px 20px 0 0;
         }
 
         .title {
-            font-size: 12px;
+            font-size: @baseFontSize;
             font-weight: bold;
-            margin: 0 0 10px;
+            margin: 0 0 8px;
         }
 
         .snippet {}
@@ -44,7 +44,8 @@
 
     // Features box
     .features {
-        margin-bottom: 20px;
+        width: 220px;
+        margin: auto auto 30px;
 
         ul {
             list-style: none;
@@ -53,7 +54,6 @@
         }
 
         .feature {
-            font-size: 13px;
             margin-bottom: 15px;
 
             a {
@@ -104,8 +104,6 @@
         .more {
 
             a {
-                font-weight: normal;
-                font-size: 13px;
                 font-weight: bold;
                 margin-left: 35px;
 
@@ -116,10 +114,10 @@
         }
     }
 
-    // Download Rebel CMS box
+    // Download Latest box
     .download-buttons {
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
 
         ul {
             list-style: none;
@@ -150,6 +148,30 @@
 
         a {
             font-weight: bold;
+        }
+    }
+}
+
+// 30em devices and up
+// -------------------------
+@media only screen and (min-width: 30em) {
+
+    .home {
+
+        // Features box
+        .features {
+            float: left;
+        }
+
+        // Download Latest box
+        .download-buttons {
+            float: right;
+            margin-top: 60px;
+        }
+
+        // Get involved box
+        .get-involved {
+            clear: both;
         }
     }
 }
