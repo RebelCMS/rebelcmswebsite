@@ -364,7 +364,7 @@ nav ol {
   height: 100%;
 }
 .global-header .tagline {
-  color: #454545;
+  color: #4c4c4c;
   font-size: 13px;
   text-align: center;
   margin: 0 0 14px;
@@ -372,9 +372,9 @@ nav ol {
 .global-nav a {
   font-weight: bold;
   text-decoration: none;
+  border-top: 1px solid #d9d9d9;
   display: block;
   padding: 8px 13px;
-  border-top: 1px solid #d9d9d9;
 }
 .global-nav a:visited {
   color: #323232;
