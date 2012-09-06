@@ -2,7 +2,7 @@
 // -------------------------
 .main-content {
     .border-radius(@baseBorderRadius @baseBorderRadius 0 0);
-    .box-shadow(0px 2px 2px 0px #c8c8c8);
+    .box-shadow(0px 2px 3px 1px #c8c8c8);
     border-top: 1px solid #adadad;
     border-bottom: 1px solid #adadad;
     background-color: #fff; // TODO: Possibly add in only when needed
@@ -27,5 +27,25 @@
 
     .main-content {
         padding: 30px 20px;
+    }
+}
+
+// 40em devices and up
+// -------------------------
+@media only screen and (min-width: 40em) {
+
+    .main-content {
+        padding: 30px;
+    }
+}
+
+// @desktopWidth devices and up
+// -------------------------
+@media only screen and (min-width: @desktopWidth) {
+
+    .main-content {
+        .clearfix;
+        .border-radius(@baseBorderRadius);
+        padding: 30px 40px;
     }
 }

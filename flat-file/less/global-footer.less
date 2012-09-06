@@ -6,7 +6,7 @@
     // Copyright
     .copyright {
         height: 55px;
-        margin-top: 35px;
+        margin-top: 30px;
         position: relative;
         text-align: right;
         background: @footerBackground url("@{imgPath}footer-logo.png") no-repeat top right;
@@ -45,7 +45,7 @@
             text-decoration: none;
             text-shadow: 0 1px 0 #fff;
             display: block;
-            padding: 7px;
+            padding: 5px;
 
             &.current,
             &:hover {
@@ -69,6 +69,34 @@
 
         li {
             width: 33%;
+        }
+    }
+}
+
+// 40em devices and up
+// -------------------------
+@media only screen and (min-width: 40em) {
+
+    // Global footer
+    // -------------------------
+    .global-footer {
+        .clearfix;
+
+        // Copyright
+        .copyright {
+            width: 40%;
+            float: right;
+        }
+    }
+
+    // Footer navigation
+    // -------------------------
+    .footer-nav {
+        width: 60%;
+        float: left;
+
+        ul {
+            text-align: left;
         }
     }
 }

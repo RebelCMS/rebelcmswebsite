@@ -81,8 +81,18 @@ nav {
     }
 }
 
-// Global wrapper
+// @desktopWidth devices and up
 // -------------------------
-.wrap {
-    background-color: darken(@bodyBackground, 13%);
+@media only screen and (min-width: @desktopWidth) {
+
+    // Body background
+    body {
+        background: @bodyBackground url("@{imgPath}body-bg.png") repeat-x;
+    }
+
+    // Global wrapper
+    .wrap {
+        width: @desktopWidth;
+        margin: 40px auto 0;
+    }
 }

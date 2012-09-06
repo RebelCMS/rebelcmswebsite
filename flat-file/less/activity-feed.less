@@ -1,10 +1,10 @@
 // Activity feed
 // -------------------------
 .activity-feed {
+    margin: 0 0 40px;
 
     .items {
         list-style: none;
-        margin: 0 0 40px;
         padding: 0;
     }
 
@@ -18,7 +18,7 @@
         padding: 8px 13px 5px;
 
         .content {
-            margin: 0 0 10px;
+            margin: 0 0 7px;
         }
 
         .posted {
@@ -60,4 +60,15 @@
 
     // GitHub (inheriting from default)
     .github {}
+}
+
+// @desktopWidth devices and up
+// -------------------------
+@media only screen and (min-width: @desktopWidth) {
+
+    // Force height at @desktopWidth to ensure correct alignment of columns
+    // TODO: Possibly refactor this column alignment
+    .activity-feed {
+        height: 450px;
+    }
 }

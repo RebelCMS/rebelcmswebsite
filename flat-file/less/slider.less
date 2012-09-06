@@ -58,7 +58,34 @@
 
         .slide-title {
             font-size: @baseFontSize + 28;
-            margin: 0 0 20px;
+        }
+    }
+}
+
+// 40em devices and up
+// -------------------------
+@media only screen and (min-width: 30em) {
+
+    // Featured content slider
+    // -------------------------
+    .slider {
+
+        .slide {
+            padding: 35px 30px 20px;
+        }
+    }
+}
+
+// @desktopWidth devices and up
+// -------------------------
+@media only screen and (min-width: @desktopWidth) {
+
+    // Featured content slider
+    // -------------------------
+    .slider {
+
+        .slide {
+            padding: 35px 40px 20px;
         }
     }
 }

@@ -30,7 +30,7 @@
             color: lighten(@textColor, 35%);
             font-size: @baseFontSize - 2;
             float: right;
-            margin: -28px 20px 0 0;
+            margin: -31px 20px 0 0;
         }
 
         .title {
@@ -172,6 +172,63 @@
         // Get involved box
         .get-involved {
             clear: both;
+        }
+    }
+}
+
+// 40em devices and up
+// -------------------------
+@media only screen and (min-width: 40em) {
+
+    .home {
+
+        // Main content column
+        .main {
+            .clearfix;
+        }
+
+        // Sidebar
+        .sidebar {
+            width: 92%;
+            margin: auto;
+        }
+
+        // Project summary box
+        .project-summary {
+            float: left;
+            width: 54%;
+        }
+
+        // Blog latest box
+        .blog-latest {
+            float: right;
+            width: 40%;
+        }
+    }
+}
+
+// @desktopWidth devices and up
+// -------------------------
+@media only screen and (min-width: @desktopWidth) {
+
+    .home {
+
+        // Main content column
+        .main {
+            width: 71%;
+            float: left;
+        }
+
+        // Sidebar
+        .sidebar {
+            width: 22%;
+            float: right;
+            margin-top: 55px;
+        }
+
+        // Download Latest box
+        .download-buttons {
+            margin: 10px 0 50px;
         }
     }
 }
