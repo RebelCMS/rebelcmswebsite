@@ -685,7 +685,7 @@ nav ol {
 }
 .slider .slide {
   font-size: 15px;
-  padding: 35px 10px 10px;
+  padding: 30px 10px 10px;
 }
 .slider .slide p {
   line-height: 1.7;
@@ -694,7 +694,7 @@ nav ol {
   color: #c62222;
   font-size: 32px;
   font-weight: normal;
-  margin: 0 0 10px;
+  margin: 0 0 8px;
 }
 .slider .learn-more a {
   color: #c62222;
@@ -705,7 +705,7 @@ nav ol {
 }
 @media only screen and (min-width: 30em) {
   .slider .slide {
-    padding: 35px 20px 20px;
+    padding: 30px 20px 20px;
   }
   .slider .slide-title {
     font-size: 42px;
@@ -713,12 +713,15 @@ nav ol {
 }
 @media only screen and (min-width: 30em) {
   .slider .slide {
-    padding: 35px 30px 20px;
+    padding: 30px 30px 20px;
   }
 }
 @media only screen and (min-width: 960px) {
   .slider .slide {
-    padding: 35px 40px 20px;
+    padding: 26px 40px 17px;
+  }
+  .slider .slide-title {
+    font-size: 53px;
   }
 }
 .activity-feed {
@@ -827,7 +830,7 @@ nav ol {
   margin-bottom: 20px;
 }
 .home .blog-latest .timestamp {
-  color: #8b8b8b;
+  color: #989898;
   font-size: 12px;
   float: right;
   margin: -31px 20px 0 0;
@@ -938,7 +941,7 @@ nav ol {
     float: left;
   }
   .home .sidebar {
-    width: 22%;
+    width: 23%;
     float: right;
     margin-top: 55px;
   }
