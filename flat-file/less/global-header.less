@@ -2,7 +2,7 @@
 // -------------------------
 .global-header {
     #gradient > .vertical(#fff, #e4e4e4);
-    .box-shadow(0px 1px 1px 0px #cfcfcf);
+    .box-shadow(0 1px 2px 0 #bbb);
     background-color: #e4e4e4;
     position: relative; // Make box-shadow overlap slider
     padding-top: 23px;
@@ -27,5 +27,28 @@
         font-size: @baseFontSize - 1;
         text-align: center;
         margin: 0 0 14px;
+    }
+}
+
+// 40em devices and up
+// -------------------------
+@media only screen and (min-width: 40em) {
+
+    .global-header {
+        .clearfix;
+        padding: 23px 15px 20px 27px;
+
+        // Header logo
+        .header-logo {
+            width: 136px;
+            height: 32px;
+            float: left;
+            margin: 0;
+        }
+
+        // Tagline
+        .tagline {
+            .visuallyhidden;
+        }
     }
 }

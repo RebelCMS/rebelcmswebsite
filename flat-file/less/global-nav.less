@@ -10,7 +10,7 @@
         padding: 8px 13px;
 
         &:visited {
-            color: @textColor;
+            color: @linkColor;
         }
 
         &:hover {
@@ -38,6 +38,25 @@
 
         a {
             border-top: 0;
+        }
+    }
+}
+
+// 40em devices and up
+// -------------------------
+@media only screen and (min-width: 40em) {
+
+    .global-nav {
+        border-top: 0;
+        float: right;
+        margin-top: 3px;
+
+        a {
+
+            &:hover {
+                .border-radius(@baseBorderRadius);
+                background-color: #ebebeb;
+            }
         }
     }
 }
