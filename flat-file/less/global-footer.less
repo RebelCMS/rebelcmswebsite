@@ -92,11 +92,23 @@
     // Footer navigation
     // -------------------------
     .footer-nav {
-        width: 60%;
+        width: 50%;
         float: left;
 
         ul {
             text-align: left;
         }
+    }
+}
+
+// @desktopWidth devices and up
+// -------------------------
+@media only screen and (min-width: @desktopWidth) {
+
+    // Global footer
+    // -------------------------
+    .global-footer {
+        width: @desktopWidth;
+        margin: auto;
     }
 }

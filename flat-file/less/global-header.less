@@ -19,14 +19,21 @@
             display: block;
             background: url("@{imgPath}header-logo.png") no-repeat;
             margin: auto;
+
+            &:hover {
+                .opacity(90);
+            }
         }
     }
 
     // Tagline
     .tagline {
-        color: lighten(@textColor, 10%);
+        color: lighten(@textColor, 40%);
         font-size: @baseFontSize - 1;
+        font-weight: normal;
+        text-shadow: 0 1px 0 #fff;
         text-align: center;
+        letter-spacing: 1px;
         margin: 0 0 14px;
     }
 }
@@ -45,6 +52,13 @@
             height: 32px;
             float: left;
             margin: 0;
+
+            a {
+
+                &:active {
+                    margin-top: 1px;
+                }
+            }
         }
 
         // Tagline
@@ -60,5 +74,7 @@
 
     .global-header {
         .border-radius(@baseBorderRadius);
+        width: @desktopWidth;
+        margin: auto;
     }
 }

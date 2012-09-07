@@ -54,7 +54,7 @@
 
         li {
             position: absolute;
-            top: 40%;
+            top: 39%;
 
             &:first-child {
                 left: 0;
@@ -171,6 +171,12 @@
 
         .slide {
 
+            // Create fixed width slide in centre
+            div {
+                width: @desktopWidth;
+                margin: auto;
+            }
+
             p {
                 margin: 0 50px 10px;
             }
@@ -186,18 +192,18 @@
             li {
 
                 &:first-child {
-                    left: 0;
+                    left: 1%;
 
                     &:active {
-                        left: -1px;
+                        left: .9%;
                     }
                 }
 
                 &:last-child {
-                    right: 0;
+                    right: 1%;
 
                     &:active {
-                        right: -1px;
+                        right: .9%;
                     }
                 }
             }
@@ -206,7 +212,10 @@
         // "A fresh new start" slide
         // -------------------------
         .new-start {
-            background: #fff url("@{imgPath}temp/kiwi-orange.jpg") no-repeat bottom right;
+
+            div {
+                background: #fff url("@{imgPath}temp/kiwi-orange.jpg") no-repeat bottom right;
+            }
 
             p {
                 width: 60%;
@@ -229,18 +238,18 @@
             li {
 
                 &:first-child {
-                    left: -50px;
+                    left: 10%;
 
                     &:active {
-                        left: -51px;
+                        left: 9.9%;
                     }
                 }
 
                 &:last-child {
-                    right: -50px;
+                    right: 10%;
 
                     &:active {
-                        right: -51px;
+                        right: 9.9%;
                     }
                 }
             }

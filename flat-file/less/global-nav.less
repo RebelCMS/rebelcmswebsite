@@ -3,8 +3,10 @@
 .global-nav {
 
     a {
+        font-size: @baseFontSize + 1;
         font-weight: bold;
         text-decoration: none;
+        text-shadow: 0 1px 0 #fff;
         border-top: 1px solid #d9d9d9;
         display: block;
         padding: 8px 13px;
@@ -17,8 +19,11 @@
             background-color: #e4e4e4;
         }
 
-        &.current,
         &:active {
+            background-color: darken(#e4e4e4, 1%);
+        }
+
+        &.current {
             text-decoration: underline;
         }
     }
@@ -55,7 +60,12 @@
 
             &:hover {
                 .border-radius(@baseBorderRadius);
+                .box-shadow(0 -1px 0 0 #c8c8c8);
                 background-color: #ebebeb;
+            }
+
+            &:active {
+                .box-shadow(0 -1px 0 0 lighten(@brandColor, 20%));
             }
         }
     }
