@@ -284,7 +284,7 @@ textarea {
 }
 body {
   color: #323232;
-  background-color: #dedede;
+  background-color: #dfdfdf;
   font-family: 'source_sans_proregular', sans-serif;
   font-size: 14px;
   line-height: 1.45;
@@ -327,9 +327,12 @@ nav ol {
   padding: 0;
 }
 @media only screen and (min-width: 960px) {
+  body {
+    background: #dfdfdf url("../img/body-bg.png");
+  }
   .wrap {
     padding-top: 40px;
-    background: #dedede url("../img/body-bg.png") repeat-x;
+    background: url("../img/wrap-bg.png") repeat-x;
   }
 }
 .global-header {
@@ -547,7 +550,7 @@ nav ol {
   margin-top: 30px;
   position: relative;
   text-align: right;
-  background: #dfdfdf url("../img/footer-logo.png") no-repeat top right;
+  background: url("../img/footer-logo.png") no-repeat top right;
 }
 .global-footer .copyright p {
   text-shadow: 0 1px 0 #fff;
@@ -862,6 +865,36 @@ nav ol {
   }
 }
 @media only screen and (min-width: 1260px) {
+  .slider:before,
+  .slider:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10%;
+    height: 300px;
+    top: -20px;
+    z-index: 1;
+    background-color: transparent;
+    background-image: -moz-linear-gradient(left, rgba(50, 50, 50, 0.15), transparent);
+    background-image: -ms-linear-gradient(left, rgba(50, 50, 50, 0.15), transparent);
+    background-image: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(50, 50, 50, 0.15)), to(transparent));
+    background-image: -webkit-linear-gradient(left, rgba(50, 50, 50, 0.15), transparent);
+    background-image: -o-linear-gradient(left, rgba(50, 50, 50, 0.15), transparent);
+    background-image: linear-gradient(left, rgba(50, 50, 50, 0.15), transparent);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(50, 50, 50, 0.15)', endColorstr='transparent', GradientType=1);
+  }
+  .slider:before {
+    left: 0;
+  }
+  .slider:after {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    right: 0;
+  }
   .slider .flex-direction-nav li:first-child {
     left: 10%;
   }

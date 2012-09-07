@@ -232,6 +232,28 @@
     // -------------------------
     .slider {
 
+        // Gradient panels
+        &:before,
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 10%;
+            height: 300px;
+            top: -20px;
+            z-index: 1;
+            #gradient > .horizontal(rgba(50,50,50,0.15), transparent);
+        }
+
+        &:before {
+            left: 0;
+        }
+
+        &:after {
+            .rotate(180deg);
+            right: 0;
+        }
+
         // Arrows
         .flex-direction-nav {
 
