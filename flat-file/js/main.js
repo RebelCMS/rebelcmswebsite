@@ -1,3 +1,8 @@
+// Featured content slider
+$('.featured-slider').flexslider({
+    animation: "slide"
+});
+
 // Hide address bar on mobile devices
 (function (win) {
     if (!/mobile/i.test(navigator.userAgent)) return;
